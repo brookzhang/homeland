@@ -458,7 +458,6 @@ DEPENDENCIES
   elasticsearch-model
   elasticsearch-rails
   exception-track
-  execjs
   factory_girl_rails
   font-awesome-rails
   hiredis
