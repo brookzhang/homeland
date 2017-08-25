@@ -145,4 +145,8 @@ group :development, :test do
   gem 'yard'
 
   gem 'codecov', require: false
+
+  gem 'mina', '1.0.6'
+  gem 'mina-whenever'
+  gem 'mina-puma', :require => false
 end
