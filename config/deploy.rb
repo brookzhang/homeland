@@ -46,7 +46,7 @@ task :environment do
   # invoke :'rbenv:load'
 
   # For those using RVM, use this to load an RVM version@gemset.
-  invoke :'rvm:use', 'ruby-2.3.1@default'
+  invoke :'rvm:use', 'ruby-2.4.0@default'
   # invoke :'rvm:use', 'ruby-2.3.1'
 end
 
@@ -85,7 +85,7 @@ task deploy: :environment do
         command %{mkdir -p tmp/}
         command %{touch tmp/restart.txt}
       end
-      # invoke :'puma:restart'
+      invoke :'puma:restart'
 
       # invoke :'sidekiq:restart'
     end
