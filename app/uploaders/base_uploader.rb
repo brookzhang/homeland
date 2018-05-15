@@ -26,7 +26,7 @@ class BaseUploader < CarrierWave::Uploader::Base
 
   def url(version_name = nil)
     @url ||= super({})
-    return @url if version_name.blank?
+    return @url #if version_name.blank?  
     version_name = version_name.to_s
     unless version_name.in?(ALLOW_VERSIONS)
       raise "ImageUploader version_name:#{version_name} not allow."
