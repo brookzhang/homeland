@@ -109,3 +109,5 @@ end
 
 task :console => :environment do
 end
+task :rake => :environment do
+end
