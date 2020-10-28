@@ -15,7 +15,7 @@ set :domain, '118.190.62.74'
 set :user, 'brook'
 set :deploy_to, '/data/www/homeland'
 set :app_path, '/data/www/homeland/current'
-set :repository, 'git://github.com/flighting/homeland'
+set :repository, 'git://github.com/brookzhang/homeland'
 set :branch, 'master'
 set :rails_env, 'production'
 set :keep_releases, 5
