@@ -38,6 +38,8 @@ set :shared_files, [
   'config/secrets.yml'
 ]
 
+invoke :'rvm:use', 'ruby-2.4.0@default'
+
 # This task is the environment that is loaded for all remote run commands, such as
 # `mina deploy` or `mina rake`.
 task :environment do
